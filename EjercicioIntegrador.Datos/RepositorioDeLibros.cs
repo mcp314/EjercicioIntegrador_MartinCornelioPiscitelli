@@ -73,8 +73,8 @@ namespace EjercicioIntegrador.Datos
         {
             return listaLibros.Where(c => c.Tema == tema).ToList();
         }
-              
 
+        
         public List<Libro> OrdenarAscPorCantidadHojas()
         {
             return listaLibros.OrderBy(c => c.CantidadHojas).ToList();

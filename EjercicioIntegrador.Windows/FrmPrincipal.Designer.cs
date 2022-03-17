@@ -268,7 +268,7 @@ namespace EjercicioIntegrador.Windows
             this.temaToolStripComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.temaToolStripComboBox.Name = "temaToolStripComboBox";
             this.temaToolStripComboBox.Size = new System.Drawing.Size(121, 23);
-            this.temaToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.temaToolStripComboBox_SelectedIndexChanged);
+            this.temaToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.TemaToolStripComboBox_SelectedIndexChanged);
             this.temaToolStripComboBox.Click += new System.EventHandler(this.TemaToolStripComboBox_Click);
             // 
             // OrdenarToolStripButton

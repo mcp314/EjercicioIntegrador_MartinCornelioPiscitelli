@@ -186,11 +186,13 @@ namespace EjercicioIntegrador.Windows
             Editorial editorial = (Editorial)EditorialtoolStripComboBox.SelectedItem;
             lista = RepositorioDeLibros.GetInstancia().FiltrarPorEditorial(editorial);
             MostrarDatosEnGrilla();
-            cantidadRegistros = RepositorioDeLibros.GetInstancia().GetCantidad();
+            //cantidadRegistros = RepositorioDeLibros.GetInstancia().GetCantidad();
+            //CantidadRegistrosLabel.Text = cantidadRegistros.ToString();
+            cantidadRegistros = lista.Count;
             CantidadRegistrosLabel.Text = cantidadRegistros.ToString();
         }
 
-        private void temaToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void TemaToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (temaToolStripComboBox.SelectedIndex == -1)
             {
@@ -200,7 +202,7 @@ namespace EjercicioIntegrador.Windows
             Tema tema = (Tema) temaToolStripComboBox.SelectedItem;
             lista = RepositorioDeLibros.GetInstancia().FiltrarPorTema(tema);
             MostrarDatosEnGrilla();
-            cantidadRegistros = RepositorioDeLibros.GetInstancia().GetCantidad();
+            cantidadRegistros = lista.Count;
             CantidadRegistrosLabel.Text = cantidadRegistros.ToString();
         }
 
@@ -249,7 +251,7 @@ namespace EjercicioIntegrador.Windows
         }
         private void EditorialToolStripComboBox_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

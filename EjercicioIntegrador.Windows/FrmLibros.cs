@@ -168,7 +168,7 @@ private int ValidarTitulo()
             libroCompleto = circCopia;
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Label4_Click(object sender, EventArgs e)
         {
 
         }
@@ -183,7 +183,7 @@ private int ValidarTitulo()
 
         }
 
-        private void tituloTextbox_TextChanged(object sender, EventArgs e)
+        private void TituloTextbox_TextChanged(object sender, EventArgs e)
         {
 
         }

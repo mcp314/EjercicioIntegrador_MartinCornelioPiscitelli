@@ -137,7 +137,7 @@ namespace EjercicioIntegrador.Windows
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Título:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
@@ -163,7 +163,7 @@ namespace EjercicioIntegrador.Windows
             this.tituloTextbox.Name = "tituloTextbox";
             this.tituloTextbox.Size = new System.Drawing.Size(120, 20);
             this.tituloTextbox.TabIndex = 7;
-            this.tituloTextbox.TextChanged += new System.EventHandler(this.tituloTextbox_TextChanged);
+            this.tituloTextbox.TextChanged += new System.EventHandler(this.TituloTextbox_TextChanged);
             // 
             // autorTextBox
             // 
