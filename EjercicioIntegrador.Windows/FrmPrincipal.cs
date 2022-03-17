@@ -214,7 +214,7 @@ namespace EjercicioIntegrador.Windows
             RecargarGrilla();
         }
 
-        private void RecargarGrilla()
+        public void RecargarGrilla()
         {
             lista = RepositorioDeLibros.GetInstancia().GetLista();
             MostrarDatosEnGrilla();

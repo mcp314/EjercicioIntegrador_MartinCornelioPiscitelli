@@ -74,7 +74,21 @@ namespace EjercicioIntegrador.Datos
             return listaLibros.Where(c => c.Tema == tema).ToList();
         }
 
-        
+        public bool CheckExisteIsbn(string isbn)
+        {
+            List<Libro> nuevalista = listaLibros.Where(c => c.ISBN == isbn).ToList();
+
+
+            if (nuevalista.Count < 1)
+            {
+                return false;
+            } 
+            else
+            {
+                return true;
+            }
+        }
+
         public List<Libro> OrdenarAscPorCantidadHojas()
         {
             return listaLibros.OrderBy(c => c.CantidadHojas).ToList();

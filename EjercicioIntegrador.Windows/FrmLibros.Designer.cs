@@ -202,7 +202,6 @@ namespace EjercicioIntegrador.Windows
             // ISBNTextBox
             // 
             this.ISBNTextBox.Location = new System.Drawing.Point(126, 11);
-            this.ISBNTextBox.Mask = "000-000-0000-00-0";
             this.ISBNTextBox.Name = "ISBNTextBox";
             this.ISBNTextBox.Size = new System.Drawing.Size(119, 20);
             this.ISBNTextBox.TabIndex = 11;

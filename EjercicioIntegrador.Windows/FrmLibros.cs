@@ -99,19 +99,27 @@ namespace EjercicioIntegrador.Windows
         }
         private int ValidarISBN()
         {
-
             if (!String.IsNullOrEmpty(ISBNTextBox.Text))
             {
-                RepositorioDeLibros.GetInstancia();
-                return 0;
+                    if (!RepositorioDeLibros.GetInstancia().CheckExisteIsbn(ISBNTextBox.Text))
+
+                    {
+                        RepositorioDeLibros.GetInstancia();
+                        return 0;
+                    }
+                    else
+                    {
+
+                        errorProvider1.SetError(ISBNTextBox, "El número de ISBN ingresado ya se encuentra cargado");
+                        return 1;
+
+                    }
             }
             else
             {
-                errorProvider1.SetError(ISBNTextBox, "el número de ISBN no puede ser nulo ni repetido");
+                errorProvider1.SetError(ISBNTextBox, "El número de ISBN ingresado no puede ser nulo");
                 return 1;
-
             }
-
         }
 
        
